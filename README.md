@@ -12,9 +12,10 @@ Dieses Repository enthält verschiedene Algorithmen, die in der Programmiersprac
       - [Suchalgorithmen](#suchalgorithmen)
       - [Datenstrukturalgorithmen](#datenstrukturalgorithmen)
   - [Verzeichnisstruktur](#verzeichnisstruktur)
+  - [Clonen dieses Repositories](#clonen-dieses-repositories)
   - [Hinweise zur Beitragserstellung](#hinweise-zur-beitragserstellung)
   - [Lizenz](#lizenz)
-
+  
 ## To-Do: Algorithmen
 
 In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken erstellt wurden. Die Implementierungen können für den Produktiveinsatz ungeeignet sein.
@@ -61,7 +62,15 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `stack.c`
         - `queue.c`
         - ...
+## Clonen dieses Repositories
 
+Um eine lokale Kopie dieses Repositories auf deinem Computer zu erstellen, folge diesen Schritten:
+
+1. Öffne die Kommandozeile (Terminal).
+
+2. Navigiere zum gewünschten Verzeichnis, in das du das Repository klonen möchtest, indem du `cd` benutzt:
+   ```bash
+   git clone https://github.com/Ohboy166/Algorithmen-u.-Datenstrukturen.git
 ## Hinweise zur Beitragserstellung
 
 Fühl dich frei, zu diesem Repository beizutragen! Wenn du einen neuen Algorithmus hinzufügen möchtest, stell bitte sicher, dass er gut dokumentiert ist und eindeutige Dateinamen und Kommentare enthält, um die Lesbarkeit zu verbessern.
