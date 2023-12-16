@@ -30,7 +30,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 
 #### Suchalgorithmen
 - Binary Search (*bereits implementiert*)
-- Boyer-Moore
+- Boyer-Moore (*bereits implementiert*)
 - Ternary Search (*bereits implementiert*)
 - ...
 
@@ -53,7 +53,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
 
     - `suchalgorithmen/`
         - `binarysearch.c` (*bereits implementiert*)
-        - `boyermoore.c`
+        - `boyermoore.c` (*bereits implementiert*)
         - `ternarysearch.c` (*bereits implementiert*)
         - ...
 
