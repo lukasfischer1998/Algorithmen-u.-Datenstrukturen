@@ -26,6 +26,8 @@ Halbierung des Suchbereichs: Der Schlüssel zur Effizienz des Algorithmus liegt 
 halbiert wird. Dadurch wird die Liste in jedem Durchlauf der Schleife, je nach Vergleich des gesuchten Elements mit dem Mittelwert, in zwei Hälften aufgeteilt.
 Die Suche findet dann im relevanten Teil weiter statt.*/
 
+// SORTIERTES ARRAY
+
 #include <stdio.h>
 
 // Binary Search Algorithm

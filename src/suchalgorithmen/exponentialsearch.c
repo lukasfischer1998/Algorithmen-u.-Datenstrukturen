@@ -26,6 +26,8 @@ Die Binary Search durchsucht effizient das spezifizierte
 Intervall, um das gesuchte Element zu finden, und gibt den Index zurück,
 an dem das Element gefunden wird, oder -1, falls das Element nicht vorhanden ist.
 */
+
+// SORTIERTES ARRAY
 #include <stdio.h>
 
 int binarySearch(int arr[], int low, int high, int target)

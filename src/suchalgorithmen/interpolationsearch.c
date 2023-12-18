@@ -25,7 +25,7 @@
 sondern schätzt die Position des gesuchten Elements basierend auf seinem Wert
 und der Verteilung der Elemente im Array. In bestimmten Fällen kann die Interpolationssuche effizienter sein als die binäre Suche.
 */
-
+// Sortiertes Array am besten
 #include <stdio.h>
 
 // Rekursive Implementierung der Interpolationssuche
