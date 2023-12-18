@@ -33,6 +33,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Boyer-Moore (*bereits implementiert*)
 - Ternary Search (*bereits implementiert*)
 - Linear Search (*bereits implementiert*)
+- Interpolation Search (*bereits implementiert*)
 - ...
 
 #### Datenstrukturalgorithmen
@@ -57,6 +58,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `boyermoore.c` (*bereits implementiert*)
         - `ternarysearch.c` (*bereits implementiert*)
         - `linearsearch.c`  (*bereits implementiert*)
+        - `interpolationsearch.c` (*bereits implementiert*)
         - ...
 
     - `datenstrukturen/`
