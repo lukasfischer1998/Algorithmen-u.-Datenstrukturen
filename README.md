@@ -35,6 +35,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Ternary Search (*bereits implementiert*)
 - Linear Search (*bereits implementiert*)
 - Interpolation Search (*bereits implementiert*)
+- Jump/Spring Search (*bereits implementiert*)
 - ...
 
 #### Datenstrukturalgorithmen
@@ -61,6 +62,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `ternarysearch.c` (*bereits implementiert*)
         - `linearsearch.c`  (*bereits implementiert*)
         - `interpolationsearch.c` (*bereits implementiert*)
+        - `jumpsearch.c` (*bereits implementiert*)
         - ...
 
     - `datenstrukturen/`
