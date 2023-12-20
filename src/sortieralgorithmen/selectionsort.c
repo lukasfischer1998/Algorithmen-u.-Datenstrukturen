@@ -18,54 +18,54 @@
 \******************************************************************************/
 
 // https://www.chrislaux.com/de/miscsort
-//  https://de.wikipedia.org/wiki/Insertionsort
-//  https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/visualize/
+// https://de.wikipedia.org/wiki/Selectionsort
+// https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/visualize/
 
 /*
-Der Insertion-Sort-Algorithmus sortiert eine Liste, indem er jedes Element durchläuft und es an die
-richtige Position innerhalb des bereits sortierten Teils der Liste einfügt.
-Hierzu vergleicht er das aktuelle Element mit den bereits sortierten Elementen
-und platziert es an der entsprechenden Stelle im sortierten Bereich.
+Der Selection-Sort-Algorithmus sortiert eine Liste, indem er das kleinste Element findet
+und es an die erste Position setzt, dann das zweitkleinste an die zweite Position usw.
 */
 
 #include <stdio.h>
 
-// Iterative Insertion Sort
-void insertionSortIterative(int arr[], int n)
+// Selection-Sort-Funktion
+void selectionSort(int arr[], int n)
 {
-    int i, key, j;
-    for (i = 1; i < n; i++)
+    int i, j, minIndex, temp;
+    for (i = 0; i < n - 1; i++)
     {
-        key = arr[i];
-        j = i - 1;
-
-        while (j >= 0 && arr[j] > key)
+        minIndex = i;
+        for (j = i + 1; j < n; j++)
         {
-            arr[j + 1] = arr[j];
-            j = j - 1;
+            if (arr[j] < arr[minIndex])
+                minIndex = j;
         }
-        arr[j + 1] = key;
+        // Tausche die gefundenen Elemente
+        temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
     }
 }
 
-// Rekursive Insertion Sort
-void insertionSortRecursive(int arr[], int n)
-{
-    if (n <= 1)
+/*
+SEHR INEFFIZIENT: Overhead durch rekursive Aufrufe, Kein Vorteil gegenüber der Iteration, Verlust der iterativen Logik
+void recursiveSelectionSort(int arr[], int n, int index) {
+    if (index >= n - 1)
         return;
 
-    insertionSortRecursive(arr, n - 1);
-
-    int last = arr[n - 1];
-    int j = n - 2;
-
-    while (j >= 0 && arr[j] > last)
-    {
-        arr[j + 1] = arr[j];
-        j--;
+    int minIndex = index;
+    for (int i = index + 1; i < n; i++) {
+        if (arr[i] < arr[minIndex])
+            minIndex = i;
     }
-    arr[j + 1] = last;
+
+    int temp = arr[minIndex];
+    arr[minIndex] = arr[index];
+    arr[index] = temp;
+
+    recursiveSelectionSort(arr, n, index + 1);
 }
+*/
 
 int main()
 {
@@ -77,22 +77,12 @@ int main()
         printf("%d ", arr[i]);
     printf("\n");
 
-    // Iterative Insertion Sort
-    insertionSortIterative(arr, n);
+    // Aufruf des Selection-Sort-Algorithmus
+    selectionSort(arr, n);
 
-    printf("\nSortiertes Array iterativ: \n");
+    printf("\nSortiertes Array nach Selection-Sort: \n");
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
-    printf("\n");
-
-    int arr2[] = {12, 11, 13, 5, 6}; // Resetting the array
-
-    // Recursive Insertion Sort
-    insertionSortRecursive(arr2, n);
-
-    printf("\nSortiertes Array rekrusiv: \n");
-    for (int i = 0; i < n; i++)
-        printf("%d ", arr2[i]);
     printf("\n");
 
     return 0;

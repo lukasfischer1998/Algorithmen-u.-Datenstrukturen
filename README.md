@@ -24,8 +24,9 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 
 #### Sortieralgorithmen
 - Bubble Sort (*bereits implementiert*)
-- Insertion Sort
-- Merge Sort
+- Insertion Sort (*bereits implementiert*)
+- Merge Sort (*bereits implementiert*)
+- Selection Sort (*bereits implementiert*)
 - ...
 
 #### Suchalgorithmen
@@ -51,8 +52,9 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
 - `src/`
     - `sortieralgorithmen/`
         - `bubblesort.c` (*bereits implementiert*)
-        - `insertionsort.c`
-        - `mergesort.c`
+        - `insertionsort.c` (*bereits implementiert*)
+        - `mergesort.c` (*bereits implementiert*)
+        - `selectionsort.c` (*bereits implementiert*)
         - ...
 
     - `suchalgorithmen/`
