@@ -29,6 +29,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Selection Sort (*bereits implementiert*)
 - Quick Sort (*bereits implementiert*)
 - Counting Sort (*bereits implementiert*)
+- Shell Sort (*bereits implementiert*)
 - ...
 
 #### Suchalgorithmen
@@ -59,6 +60,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `selectionsort.c` (*bereits implementiert*)
         - `quicksort.c` (*bereits implementiert*)
         - `countingsort.c` (*bereits implementiert*)
+        - `shellsort.c` (*bereits implementiert*)
         - ...
 
     - `suchalgorithmen/`
