@@ -30,6 +30,8 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Quick Sort (*bereits implementiert*)
 - Counting Sort (*bereits implementiert*)
 - Shell Sort (*bereits implementiert*)
+- Radix Sort (*bereits implementiert*)
+- Bucket Sort (*bereits implementiert*)
 - ...
 
 #### Suchalgorithmen
@@ -61,6 +63,8 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `quicksort.c` (*bereits implementiert*)
         - `countingsort.c` (*bereits implementiert*)
         - `shellsort.c` (*bereits implementiert*)
+        - `radixsort.c` (*bereits implementiert*)
+        - `bucketsort.c` (*bereits implementiert*)
         - ...
 
     - `suchalgorithmen/`
