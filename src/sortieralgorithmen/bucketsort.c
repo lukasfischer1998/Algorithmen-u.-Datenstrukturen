@@ -29,11 +29,9 @@ sortiert werden können. In dieser Implementierung werden für die Verteilung de
 Nach der Verteilung werden die einzelnen Buckets mit einer einfachen Sortiermethode
 (hier wird Insertion Sort verwendet) sortiert und dann in das ursprüngliche Array zurückgeführt.
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 
-// Hilfsfunktion für das Einfügen eines Elements in einen Bucket (für Gleitkommazahlen)
 void insertSort(float arr[], int n)
 {
     for (int i = 1; i < n; i++)
@@ -50,12 +48,11 @@ void insertSort(float arr[], int n)
     }
 }
 
-// Bucket Sort Algorithmus für Gleitkommazahlen
 void bucketSort(float arr[], int n)
 {
     const int num_buckets = 10;
-    // Buckets als Arrays von Zeigern auf Gleitkommazahlen-Arrays
-    float *buckets[num_buckets];
+    float **buckets = (float **)malloc(sizeof(float *) * num_buckets);
+
     for (int i = 0; i < num_buckets; i++)
     {
         buckets[i] = (float *)malloc(sizeof(float) * n);
@@ -98,9 +95,9 @@ void bucketSort(float arr[], int n)
         }
         free(buckets[i]);
     }
+    free(buckets);
 }
 
-// Beispiel in der Main-Funktion
 int main()
 {
     float arr[] = {0.42, 0.32, 0.33, 0.52, 0.37, 0.47, 0.51};

@@ -32,6 +32,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Shell Sort (*bereits implementiert*)
 - Radix Sort (*bereits implementiert*)
 - Bucket Sort (*bereits implementiert*)
+- Heap Sort (*bereits implementiert*)
 - ...
 
 #### Suchalgorithmen
@@ -65,6 +66,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `shellsort.c` (*bereits implementiert*)
         - `radixsort.c` (*bereits implementiert*)
         - `bucketsort.c` (*bereits implementiert*)
+        - `heapsort.c` (*bereits implementiert*)
         - ...
 
     - `suchalgorithmen/`
