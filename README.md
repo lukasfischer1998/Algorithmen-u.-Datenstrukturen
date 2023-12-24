@@ -44,6 +44,8 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Linear Search (*bereits implementiert*)
 - Interpolation Search (*bereits implementiert*)
 - Jump/Spring Search (*bereits implementiert*)
+- Fibonacci Search (*bereits implementiert*)
+- Count Occurences Search (*bereits implementiert*)
 - ...
 
 #### Datenstrukturalgorithmen
@@ -79,6 +81,8 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `linearsearch.c`  (*bereits implementiert*)
         - `interpolationsearch.c` (*bereits implementiert*)
         - `jumpsearch.c` (*bereits implementiert*)
+        - `fibonaccisearch.c` (*bereits implementiert*)
+        - `countoccurencessearch.c` (*bereits implementiert*)
         - ...
 
     - `datenstrukturen/`
