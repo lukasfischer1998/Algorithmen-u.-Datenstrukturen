@@ -17,99 +17,83 @@
 |                                                                              |
 \******************************************************************************/
 
-//https://de.wikipedia.org/wiki/Warteschlange_(Datenstruktur)#:~:text=In%20der%20Informatik%20bezeichnet%20eine,Reihenfolge%2C%20bevor%20diese%20weiterverarbeitet%20werden.
-// https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/queue/
-// https://www.happycoders.eu/de/algorithmen/queue-datenstruktur/
-// https://www.cs.usfca.edu/~galles/visualization/QueueArray.html
+// https://de.wikipedia.org/wiki/Warteschlange_(Datenstruktur)#:~:text=In%20der%20Informatik%20bezeichnet%20eine,Reihenfolge%2C%20bevor%20diese%20weiterverarbeitet%20werden.
+//  https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/queue/
+//  https://www.happycoders.eu/de/algorithmen/queue-datenstruktur/
+//  https://www.cs.usfca.edu/~galles/visualization/QueueArray.html
 
 /*
-Eine Queue ist eine Datenstruktur, die nach dem "First-In-First-Out" 
-(FIFO)-Prinzip funktioniert, wobei das zuerst hinzugefügte Element 
-auch als erstes wieder entfernt wird. Man verwendet eine Queue, um 
-Elemente zu speichern und darauf zuzugreifen, 
-wobei Elemente hinten eingefügt und vorne entfernt werden, ähnlich wie 
+Eine Queue ist eine Datenstruktur, die nach dem "First-In-First-Out"
+(FIFO)-Prinzip funktioniert, wobei das zuerst hinzugefügte Element
+auch als erstes wieder entfernt wird. Man verwendet eine Queue, um
+Elemente zu speichern und darauf zuzugreifen,
+wobei Elemente hinten eingefügt und vorne entfernt werden, ähnlich wie
 eine Warteschlange, in der das zuerst ankommende Element als erstes bedient wird.
 */
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
 #define MAX_SIZE 100
 
-typedef struct
-{
+typedef struct {
     int items[MAX_SIZE];
     int front;
     int rear;
 } Queue;
 
-Queue *createQueue()
-{
-    Queue *queue = (Queue *)malloc(sizeof(Queue));
+Queue* createQueue() {
+    Queue* queue = (Queue*)malloc(sizeof(Queue));
     queue->front = -1;
     queue->rear = -1;
     return queue;
 }
 
-int isFull(Queue *queue)
-{
+int isFull(Queue* queue) {
     return (queue->rear == MAX_SIZE - 1);
 }
 
-int isEmpty(Queue *queue)
-{
+int isEmpty(Queue* queue) {
     return (queue->front == -1 || queue->front > queue->rear);
 }
 
-void enqueue(Queue *queue, int value)
-{
-    if (isFull(queue))
-    {
-        printf("Queue is full. Cannot enqueue.\n");
+void enqueue(Queue* queue, int value) {
+    if (isFull(queue)) {
+        printf("Die Queue ist voll. Kann nicht hinzugefügt werden.\n");
         return;
     }
-    if (queue->front == -1)
-    {
+    if (queue->front == -1) {
         queue->front = 0;
     }
     queue->rear++;
     queue->items[queue->rear] = value;
-    printf("Enqueued: %d\n", value);
+    printf("Hinzugefügt: %d\n", value);
 }
 
-int dequeue(Queue *queue)
-{
-    if (isEmpty(queue))
-    {
-        printf("Queue is empty. Cannot dequeue.\n");
+int dequeue(Queue* queue) {
+    if (isEmpty(queue)) {
+        printf("Die Queue ist leer. Kann nicht entfernt werden.\n");
         return -1;
     }
-    int dequeued = queue->items[queue->front];
+    int entfernt = queue->items[queue->front];
     queue->front++;
-    printf("Dequeued: %d\n", dequeued);
-    return dequeued;
+    printf("Entfernt: %d\n", entfernt);
+    return entfernt;
 }
 
-void printQueue(Queue *queue)
-{
-    if (isEmpty(queue))
-    {
-        printf("Queue is empty.\n");
+void printQueue(Queue* queue) {
+    if (isEmpty(queue)) {
+        printf("Die Queue ist leer.\n");
         return;
     }
     printf("Queue: ");
-    for (int i = queue->front; i <= queue->rear; i++)
-    {
+    for (int i = queue->front; i <= queue->rear; i++) {
         printf("%d ", queue->items[i]);
     }
     printf("\n");
 }
 
-int main()
-{
-    Queue *queue = createQueue();
+int main() {
+    Queue* queue = createQueue();
 
     enqueue(queue, 10);
     enqueue(queue, 20);

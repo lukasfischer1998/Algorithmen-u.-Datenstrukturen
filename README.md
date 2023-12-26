@@ -45,7 +45,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Interpolation Search (*bereits implementiert*)
 - Jump/Spring Search (*bereits implementiert*)
 - Fibonacci Search (*bereits implementiert*)
-- Count Occurences Search (*bereits implementiert*)
+- Count Occurences Search (*bereits implementiert*) 
 - ...
 
 #### Datenstrukturalgorithmen
