@@ -50,8 +50,8 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 
 #### Datenstrukturalgorithmen
 - Linked List (*bereits implementiert*)
-- Stack (*bereits implementiert*)
-- Queue (*bereits implementiert*)
+- Stack
+- Queue
 - ...
 
 ## Verzeichnisstruktur
