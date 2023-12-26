@@ -50,8 +50,8 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 
 #### Datenstrukturalgorithmen
 - Linked List (*bereits implementiert*)
-- Stack
-- Queue
+- Stack (*bereits implementiert*)
+- Queue (*bereits implementiert*)
 - ...
 
 ## Verzeichnisstruktur
@@ -88,7 +88,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
     - `datenstrukturen/`
         - `linkedlist.c` (*bereits implementiert*)
         - `stack.c` (*bereits implementiert*)
-        - `queue.c`
+        - `queue.c` (*bereits implementiert*)
         - ...
 ## Clonen dieses Repositories
 
