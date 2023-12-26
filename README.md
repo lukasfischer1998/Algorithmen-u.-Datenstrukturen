@@ -87,7 +87,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
 
     - `datenstrukturen/`
         - `linkedlist.c` (*bereits implementiert*)
-        - `stack.c`
+        - `stack.c` (*bereits implementiert*)
         - `queue.c`
         - ...
 ## Clonen dieses Repositories
