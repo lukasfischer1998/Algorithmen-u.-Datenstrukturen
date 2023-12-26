@@ -52,6 +52,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Linked List (*bereits implementiert*)
 - Stack (*bereits implementiert*)
 - Queue (*bereits implementiert*)
+- Array (*bereits implementiert*)
 - ...
 
 ## Verzeichnisstruktur
@@ -89,6 +90,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `linkedlist.c` (*bereits implementiert*)
         - `stack.c` (*bereits implementiert*)
         - `queue.c` (*bereits implementiert*)
+        - `array.c` (*bereits implementiert*)
         - ...
 ## Clonen dieses Repositories
 

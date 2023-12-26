@@ -35,33 +35,40 @@ eine Warteschlange, in der das zuerst ankommende Element als erstes bedient wird
 
 #define MAX_SIZE 100
 
-typedef struct {
+typedef struct
+{
     int items[MAX_SIZE];
     int front;
     int rear;
 } Queue;
 
-Queue* createQueue() {
-    Queue* queue = (Queue*)malloc(sizeof(Queue));
+Queue *createQueue()
+{
+    Queue *queue = (Queue *)malloc(sizeof(Queue));
     queue->front = -1;
     queue->rear = -1;
     return queue;
 }
 
-int isFull(Queue* queue) {
+int isFull(Queue *queue)
+{
     return (queue->rear == MAX_SIZE - 1);
 }
 
-int isEmpty(Queue* queue) {
+int isEmpty(Queue *queue)
+{
     return (queue->front == -1 || queue->front > queue->rear);
 }
 
-void enqueue(Queue* queue, int value) {
-    if (isFull(queue)) {
+void enqueue(Queue *queue, int value)
+{
+    if (isFull(queue))
+    {
         printf("Die Queue ist voll. Kann nicht hinzugefügt werden.\n");
         return;
     }
-    if (queue->front == -1) {
+    if (queue->front == -1)
+    {
         queue->front = 0;
     }
     queue->rear++;
@@ -69,8 +76,10 @@ void enqueue(Queue* queue, int value) {
     printf("Hinzugefügt: %d\n", value);
 }
 
-int dequeue(Queue* queue) {
-    if (isEmpty(queue)) {
+int dequeue(Queue *queue)
+{
+    if (isEmpty(queue))
+    {
         printf("Die Queue ist leer. Kann nicht entfernt werden.\n");
         return -1;
     }
@@ -80,20 +89,24 @@ int dequeue(Queue* queue) {
     return entfernt;
 }
 
-void printQueue(Queue* queue) {
-    if (isEmpty(queue)) {
+void printQueue(Queue *queue)
+{
+    if (isEmpty(queue))
+    {
         printf("Die Queue ist leer.\n");
         return;
     }
     printf("Queue: ");
-    for (int i = queue->front; i <= queue->rear; i++) {
+    for (int i = queue->front; i <= queue->rear; i++)
+    {
         printf("%d ", queue->items[i]);
     }
     printf("\n");
 }
 
-int main() {
-    Queue* queue = createQueue();
+int main()
+{
+    Queue *queue = createQueue();
 
     enqueue(queue, 10);
     enqueue(queue, 20);
