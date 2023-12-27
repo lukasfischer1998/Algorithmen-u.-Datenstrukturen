@@ -10,7 +10,7 @@ Dieses Repository enthält verschiedene Algorithmen, die in der Programmiersprac
     - [Enthaltene Algorithmen](#enthaltene-algorithmen)
       - [Sortieralgorithmen](#sortieralgorithmen)
       - [Suchalgorithmen](#suchalgorithmen)
-      - [Datenstrukturalgorithmen](#datenstrukturalgorithmen)
+      - [Datenstrukturen](#datenstrukturen)
   - [Verzeichnisstruktur](#verzeichnisstruktur)
   - [Clonen dieses Repositories](#clonen-dieses-repositories)
   - [Hinweise zur Beitragserstellung](#hinweise-zur-beitragserstellung)
@@ -48,7 +48,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Count Occurences Search (*bereits implementiert*) 
 - ...
 
-#### Datenstrukturalgorithmen
+#### Datenstrukturen
 - Linked List (*bereits implementiert*)
 - Stack (*bereits implementiert*)
 - Queue (*bereits implementiert*)
