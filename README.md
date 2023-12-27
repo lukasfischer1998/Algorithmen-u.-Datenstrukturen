@@ -53,6 +53,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Stack (*bereits implementiert*)
 - Queue (*bereits implementiert*)
 - Array (*bereits implementiert*)
+- Tree (*bereits implementiert*)
 - ...
 
 ## Verzeichnisstruktur
@@ -91,6 +92,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `stack.c` (*bereits implementiert*)
         - `queue.c` (*bereits implementiert*)
         - `array.c` (*bereits implementiert*)
+        - `tree.c` (*bereits implementiert*)
         - ...
 ## Clonen dieses Repositories
 
