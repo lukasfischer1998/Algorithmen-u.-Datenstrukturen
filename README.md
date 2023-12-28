@@ -54,6 +54,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Queue (*bereits implementiert*)
 - Array (*bereits implementiert*)
 - Tree (*bereits implementiert*)
+- Heap (minHeap) (*bereits implementiert*)
 - ...
 
 ## Verzeichnisstruktur
@@ -93,6 +94,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `queue.c` (*bereits implementiert*)
         - `array.c` (*bereits implementiert*)
         - `tree.c` (*bereits implementiert*)
+        - `minheap.c` (*bereits implementiert*)
         - ...
 ## Clonen dieses Repositories
 
