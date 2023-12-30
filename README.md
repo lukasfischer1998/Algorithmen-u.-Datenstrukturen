@@ -55,6 +55,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Array (*bereits implementiert*)
 - Tree (*bereits implementiert*)
 - Heap (minHeap) (*bereits implementiert*)
+- Hash Map (*bereits implementiert*)
 - ...
 
 ## Verzeichnisstruktur
@@ -95,6 +96,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `array.c` (*bereits implementiert*)
         - `tree.c` (*bereits implementiert*)
         - `minheap.c` (*bereits implementiert*)
+        - `hashmap.c` (*bereits implementiert*)
         - ...
 ## Clonen dieses Repositories
 
