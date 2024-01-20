@@ -34,6 +34,7 @@ In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken
 - Bucket Sort (*bereits implementiert*)
 - Heap Sort (*bereits implementiert*)
 - Cycle Sort (*bereits implementiert*)
+- Odd-Even Sort (*bereits implementiert*)
 - ...
 
 #### Suchalgorithmen
@@ -75,6 +76,7 @@ Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
         - `bucketsort.c` (*bereits implementiert*)
         - `heapsort.c` (*bereits implementiert*)
         - `cyclesort.c` (*bereits implementiert*)
+        - `oddevensort.c` (*bereits implementiert*)
         - ...
 
     - `suchalgorithmen/`
