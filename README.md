@@ -2,104 +2,50 @@
 
 Dieses Repository enthält verschiedene Algorithmen, die in der Programmiersprache C implementiert wurden. Die Implementierungen dienen dazu, die Funktionsweise dieser Algorithmen zu zeigen und als Lernressource für Programmierende, die sich mit Algorithmen und Datenstrukturen beschäftigen.
 
+
 ## Inhaltsverzeichnis
 
 - [Algorithmus-Implementierungen in C](#algorithmus-implementierungen-in-c)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
-  - [To-Do: Algorithmen](#to-do-algorithmen)
-    - [Enthaltene Algorithmen](#enthaltene-algorithmen)
-      - [Sortieralgorithmen](#sortieralgorithmen)
-      - [Suchalgorithmen](#suchalgorithmen)
-      - [Datenstrukturen](#datenstrukturen)
   - [Verzeichnisstruktur](#verzeichnisstruktur)
   - [Clonen dieses Repositories](#clonen-dieses-repositories)
   - [Hinweise zur Beitragserstellung](#hinweise-zur-beitragserstellung)
   - [Lizenz](#lizenz)
-  
-## To-Do: Algorithmen
-
-In diesem Repository sind verschiedene Algorithmen enthalten, die zu Lernzwecken erstellt wurden. Die Implementierungen können für den Produktiveinsatz ungeeignet sein.
-
-### Enthaltene Algorithmen
-
-#### Sortieralgorithmen
-- Bubble Sort (*bereits implementiert*)
-- Insertion Sort (*bereits implementiert*)
-- Merge Sort (*bereits implementiert*)
-- Selection Sort (*bereits implementiert*)
-- Quick Sort (*bereits implementiert*)
-- Counting Sort (*bereits implementiert*)
-- Shell Sort (*bereits implementiert*)
-- Radix Sort (*bereits implementiert*)
-- Bucket Sort (*bereits implementiert*)
-- Heap Sort (*bereits implementiert*)
-- Cycle Sort (*bereits implementiert*)
-- Odd-Even Sort (*bereits implementiert*)
-- ...
-
-#### Suchalgorithmen
-- Binary Search (*bereits implementiert*)
-- Exponential Search (*bereits implementiert*)
-- Boyer-Moore (*bereits implementiert*)
-- Ternary Search (*bereits implementiert*)
-- Linear Search (*bereits implementiert*)
-- Interpolation Search (*bereits implementiert*)
-- Jump/Spring Search (*bereits implementiert*)
-- Fibonacci Search (*bereits implementiert*)
-- Count Occurences Search (*bereits implementiert*) 
-- ...
-
-#### Datenstrukturen
-- Linked List (*bereits implementiert*)
-- Stack (*bereits implementiert*)
-- Queue (*bereits implementiert*)
-- Array (*bereits implementiert*)
-- Tree (*bereits implementiert*)
-- Heap (minHeap) (*bereits implementiert*)
-- Hash Map (*bereits implementiert*)
-- ...
 
 ## Verzeichnisstruktur
+- src/
+    - sortieralgorithmen/
+        - bubblesort.c
+        - insertionsort.c
+        - mergesort.c
+        - selectionsort.c
+        - quicksort.c
+        - countingsort.c
+        - shellsort.c
+        - radixsort.c
+        - bucketsort.c
+        - heapsort.c
+        - cyclesort.c
+        - oddevensort.c
+    - suchalgorithmen/
+        - binarysearch.c
+        - exponentialsearch.c
+        - boyermoore.c
+        - ternarysearch.c
+        - linearsearch.c
+        - interpolationsearch.c
+        - jumpsearch.c
+        - fibonaccisearch.c
+        - countoccurencessearch.c
+    - datenstrukturen/
+        - linkedlist.c
+        - stack.c
+        - queue.c
+        - array.c
+        - tree.c
+        - minheap.c
+        - hashmap.c
 
-Die Algorithmen sind hierarchisch im `src`-Ordner organisiert:
-
-- `src/`
-    - `sortieralgorithmen/`
-        - `bubblesort.c` (*bereits implementiert*)
-        - `insertionsort.c` (*bereits implementiert*)
-        - `mergesort.c` (*bereits implementiert*)
-        - `selectionsort.c` (*bereits implementiert*)
-        - `quicksort.c` (*bereits implementiert*)
-        - `countingsort.c` (*bereits implementiert*)
-        - `shellsort.c` (*bereits implementiert*)
-        - `radixsort.c` (*bereits implementiert*)
-        - `bucketsort.c` (*bereits implementiert*)
-        - `heapsort.c` (*bereits implementiert*)
-        - `cyclesort.c` (*bereits implementiert*)
-        - `oddevensort.c` (*bereits implementiert*)
-        - ...
-
-    - `suchalgorithmen/`
-        - `binarysearch.c` (*bereits implementiert*)
-        - `exponentialsearch.c` (*bereits implementiert*)
-        - `boyermoore.c` (*bereits implementiert*)
-        - `ternarysearch.c` (*bereits implementiert*)
-        - `linearsearch.c`  (*bereits implementiert*)
-        - `interpolationsearch.c` (*bereits implementiert*)
-        - `jumpsearch.c` (*bereits implementiert*)
-        - `fibonaccisearch.c` (*bereits implementiert*)
-        - `countoccurencessearch.c` (*bereits implementiert*)
-        - ...
-
-    - `datenstrukturen/`
-        - `linkedlist.c` (*bereits implementiert*)
-        - `stack.c` (*bereits implementiert*)
-        - `queue.c` (*bereits implementiert*)
-        - `array.c` (*bereits implementiert*)
-        - `tree.c` (*bereits implementiert*)
-        - `minheap.c` (*bereits implementiert*)
-        - `hashmap.c` (*bereits implementiert*)
-        - ...
 ## Clonen dieses Repositories
 
 Um eine lokale Kopie dieses Repositories auf deinem Computer zu erstellen, folge diesen Schritten:
@@ -120,7 +66,7 @@ Bei der Beitragserstellung folge bitte diesen Schritten:
 3. Implementiere den Algorithmus und füge ihn in das entsprechende Verzeichnis ein.
 4. Aktualisiere die README-Datei, falls erforderlich, um den neuen Algorithmus einzuschließen.
 5. Erstelle einen Pull-Request.
-
+6. 
 ## Lizenz
 
 Dieses Repository ist unter der [GNU General Public License Version 3.0](https://www.gnu.org/licenses/gpl-3.0.html) veröffentlicht. Weitere Informationen findest du in der [Lizenzdatei](LICENSE).
